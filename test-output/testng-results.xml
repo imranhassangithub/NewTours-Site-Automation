@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="17390" started-at="2017-04-17T11:43:14Z" finished-at="2017-04-17T11:43:31Z">
+  <suite name="Sample test Suite" duration-ms="19179" started-at="2017-04-17T12:41:06Z" finished-at="2017-04-17T12:41:25Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="17390" started-at="2017-04-17T11:43:14Z" finished-at="2017-04-17T11:43:31Z">
-      <class name="com.bitm.newtours.test.FindFlightTest">
-        <test-method status="PASS" signature="checkTitle()[pri:0, instance:com.bitm.newtours.test.FindFlightTest@59fa1d9b]" name="checkTitle" duration-ms="3164" started-at="2017-04-17T17:43:25Z" finished-at="2017-04-17T17:43:28Z">
+    <test name="Sample test" duration-ms="19179" started-at="2017-04-17T12:41:06Z" finished-at="2017-04-17T12:41:25Z">
+      <class name="com.bitm.newtours.test.SelectFlightTest">
+        <test-method status="PASS" signature="checkSelectFlightPageTitle()[pri:0, instance:com.bitm.newtours.test.SelectFlightTest@4678c730]" name="checkSelectFlightPageTitle" duration-ms="588" started-at="2017-04-17T18:41:24Z" finished-at="2017-04-17T18:41:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method status="PASS" signature="checkFlightDetails(java.util.List)[pri:0, instance:com.bitm.newtours.test.FindFlightTest@59fa1d9b]" name="checkFlightDetails" duration-ms="2578" started-at="2017-04-17T17:43:28Z" data-provider="FlightFindData" finished-at="2017-04-17T17:43:31Z">
+        </test-method> <!-- checkSelectFlightPageTitle -->
+        <test-method status="PASS" signature="checkSelectFlight()[pri:0, instance:com.bitm.newtours.test.SelectFlightTest@4678c730]" name="checkSelectFlight" duration-ms="97" started-at="2017-04-17T18:41:25Z" finished-at="2017-04-17T18:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectFlight -->
+      </class> <!-- com.bitm.newtours.test.SelectFlightTest -->
+      <class name="com.bitm.newtours.test.FindFlightTest">
+        <test-method status="PASS" signature="checkFlightFindPageTitle()[pri:0, instance:com.bitm.newtours.test.FindFlightTest@4501b7af]" name="checkFlightFindPageTitle" duration-ms="3212" started-at="2017-04-17T18:41:18Z" finished-at="2017-04-17T18:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlightFindPageTitle -->
+        <test-method status="PASS" signature="checkFlightDetails(java.util.List)[pri:0, instance:com.bitm.newtours.test.FindFlightTest@4501b7af]" name="checkFlightDetails" duration-ms="2501" started-at="2017-04-17T18:41:22Z" data-provider="FlightFindData" finished-at="2017-04-17T18:41:24Z">
           <params>
             <param index="0">
               <value>
@@ -24,11 +34,11 @@
         </test-method> <!-- checkFlightDetails -->
       </class> <!-- com.bitm.newtours.test.FindFlightTest -->
       <class name="com.bitm.newtours.test.HomeTest">
-        <test-method status="PASS" signature="checkTitle()[pri:0, instance:com.bitm.newtours.test.HomeTest@724af044]" name="checkTitle" duration-ms="8168" started-at="2017-04-17T17:43:14Z" finished-at="2017-04-17T17:43:22Z">
+        <test-method status="PASS" signature="checkHomePageTitle()[pri:0, instance:com.bitm.newtours.test.HomeTest@59fa1d9b]" name="checkHomePageTitle" duration-ms="9545" started-at="2017-04-17T18:41:06Z" finished-at="2017-04-17T18:41:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method status="PASS" signature="checkLogin(java.util.List)[pri:0, instance:com.bitm.newtours.test.HomeTest@724af044]" name="checkLogin" duration-ms="2811" started-at="2017-04-17T17:43:22Z" data-provider="loginData" finished-at="2017-04-17T17:43:25Z">
+        </test-method> <!-- checkHomePageTitle -->
+        <test-method status="PASS" signature="checkLogin(java.util.List)[pri:0, instance:com.bitm.newtours.test.HomeTest@59fa1d9b]" name="checkLogin" duration-ms="2546" started-at="2017-04-17T18:41:16Z" data-provider="loginData" finished-at="2017-04-17T18:41:18Z">
           <params>
             <param index="0">
               <value>

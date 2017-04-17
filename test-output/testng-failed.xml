@@ -3,12 +3,11 @@
 <suite name="Failed suite [Sample test Suite]">
   <test name="Sample test(failed)">
     <classes>
-      <class name="com.bitm.newtours.test.FindFlightTest">
+      <class name="com.bitm.newtours.test.SelectFlightTest">
         <methods>
-          <include name="checkTitle"/>
-          <include name="checkFlightDetails" invocation-numbers="0"/>
+          <include name="checkSelectFlightPageTitle"/>
         </methods>
-      </class> <!-- com.bitm.newtours.test.FindFlightTest -->
+      </class> <!-- com.bitm.newtours.test.SelectFlightTest -->
     </classes>
   </test> <!-- Sample test(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->

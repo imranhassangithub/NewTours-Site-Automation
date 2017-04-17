@@ -9,6 +9,8 @@
                        </class>
                        <class name="com.bitm.newtours.test.FindFlightTest">
                        </class>
+                       <class name="com.bitm.newtours.test.SelectFlightTest">
+                       </class>
                </classes>
  </test>
 </suite>	

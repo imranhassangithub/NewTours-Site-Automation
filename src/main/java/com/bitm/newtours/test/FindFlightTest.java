@@ -22,7 +22,7 @@ public class FindFlightTest {
 	private WebDriver driver=null;
 	
 	@Test(priority=1)
-	public void checkTitle(){
+	public void checkFlightFindPageTitle(){
 		driver=DriverManager.driver;
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XpathUtils.FindFlight.DROPDOWN_PASSENGERS)));
@@ -61,6 +61,8 @@ public class FindFlightTest {
 		airlinePreference.selectByValue(excelflightfind.getAirlinePreference());
 		*/
 		driver.findElement(By.xpath(XpathUtils.FindFlight.BUTTON_CONTINUE)).submit();
+		
+		System.out.println("Successfully selected data for Find Flight Page !!");
 		}
 	}
 	private void navigate(String url) {
