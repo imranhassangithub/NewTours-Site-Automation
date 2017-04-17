@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample test Suite]">
+  <test name="Sample test(failed)">
+    <classes>
+      <class name="com.bitm.newtours.test.FindFlightTest">
+        <methods>
+          <include name="checkTitle"/>
+          <include name="checkFlightDetails" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitm.newtours.test.FindFlightTest -->
+    </classes>
+  </test> <!-- Sample test(failed) -->
+</suite> <!-- Failed suite [Sample test Suite] -->
