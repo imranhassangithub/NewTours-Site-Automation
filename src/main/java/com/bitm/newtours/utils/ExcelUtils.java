@@ -14,6 +14,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.bitm.newtours.dto.BookFlight;
 import com.bitm.newtours.dto.FlightFinder;
 import com.bitm.newtours.dto.Login;
 
@@ -116,4 +117,84 @@ public static List<FlightFinder> getFlightFindData() throws IOException{
     }
     close();
 	return flightFinders;
-}}
+}
+public static List<BookFlight> getBookFlightData() throws IOException{
+	List<BookFlight> bookFlights=new ArrayList<BookFlight>();
+	
+	//excelBookFlight is the second sheet in excel so getSheet parameter set to 2
+	DataFormatter formatter = new DataFormatter();
+	Iterator<Row> iterator = ExcelUtils.getSheet(2).iterator();
+    while (iterator.hasNext()) {
+        Row nextRow = iterator.next();
+        Iterator<Cell> cellIterator = nextRow.cellIterator();
+        BookFlight excelbookflight=new BookFlight();
+        byte cellCounter=0;
+        while (cellIterator.hasNext()) {
+            Cell cell = cellIterator.next();
+            switch (cellCounter) {
+			case 0:
+				excelbookflight.setPassenger1Fname(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 1:
+				excelbookflight.setPassenger1Lname(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 2:
+				excelbookflight.setPassenger2Fname(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 3:
+				excelbookflight.setPassenger2Lname(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;				
+			case 4:
+				excelbookflight.setCcCardType(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 5:
+				excelbookflight.setCcNumber(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;			
+			case 6:
+				excelbookflight.setCcFname(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 7:
+				excelbookflight.setCcMiddleName(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 8:
+				excelbookflight.setCcLastName(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+			case 9:
+				excelbookflight.setBillingAddress(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+            case 10:
+				excelbookflight.setBillingCity(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+            case 11:
+				excelbookflight.setBillingState(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+            case 12:
+				excelbookflight.setBillingPostalCode(formatter.formatCellValue(cell));
+				cellCounter++;
+				break;
+            case 13:
+				excelbookflight.setBillingCountry(formatter.formatCellValue(cell));
+				break;
+			default:
+				break;
+			}               
+             
+        }
+        bookFlights.add(excelbookflight);
+    }
+    close();
+	return bookFlights;
+}
+}

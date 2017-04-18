@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Sample test Suite">
+<suite name="Test Newtours Site">
    
-   <test name="Sample test">
+   <test name="Complete NewTours Site Test">
                <classes>
                       <class name="com.bitm.newtours.test.HomeTest">
                        </class>
                        <class name="com.bitm.newtours.test.FindFlightTest">
                        </class>
                        <class name="com.bitm.newtours.test.SelectFlightTest">
+                       </class>
+                       <class name="com.bitm.newtours.test.BookFlightTest">
                        </class>
                </classes>
  </test>
