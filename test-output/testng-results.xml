@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Newtours Site" duration-ms="20322" started-at="2017-04-18T13:49:00Z" finished-at="2017-04-18T13:49:20Z">
+  <suite name="Test Newtours Site" duration-ms="74692" started-at="2017-05-10T11:41:21Z" finished-at="2017-05-10T11:42:36Z">
     <groups>
     </groups>
-    <test name="Complete NewTours Site Test" duration-ms="20322" started-at="2017-04-18T13:49:00Z" finished-at="2017-04-18T13:49:20Z">
+    <test name="Complete NewTours Site Test" duration-ms="74692" started-at="2017-05-10T11:41:21Z" finished-at="2017-05-10T11:42:36Z">
       <class name="com.bitm.newtours.test.SelectFlightTest">
-        <test-method status="PASS" signature="checkSelectFlightPageTitle()[pri:0, instance:com.bitm.newtours.test.SelectFlightTest@28d25987]" name="checkSelectFlightPageTitle" duration-ms="558" started-at="2017-04-18T19:49:18Z" finished-at="2017-04-18T19:49:18Z">
+        <test-method status="PASS" signature="checkSelectFlightPageTitle()[pri:0, instance:com.bitm.newtours.test.SelectFlightTest@61832929]" name="checkSelectFlightPageTitle" duration-ms="1732" started-at="2017-05-10T17:42:29Z" finished-at="2017-05-10T17:42:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSelectFlightPageTitle -->
-        <test-method status="PASS" signature="checkSelectFlight()[pri:0, instance:com.bitm.newtours.test.SelectFlightTest@28d25987]" name="checkSelectFlight" duration-ms="129" started-at="2017-04-18T19:49:18Z" finished-at="2017-04-18T19:49:18Z">
+        <test-method status="PASS" signature="checkSelectFlight()[pri:0, instance:com.bitm.newtours.test.SelectFlightTest@61832929]" name="checkSelectFlight" duration-ms="481" started-at="2017-05-10T17:42:31Z" finished-at="2017-05-10T17:42:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSelectFlight -->
       </class> <!-- com.bitm.newtours.test.SelectFlightTest -->
       <class name="com.bitm.newtours.test.BookFlightTest">
-        <test-method status="PASS" signature="checkBookFlightPageTitle()[pri:0, instance:com.bitm.newtours.test.BookFlightTest@6767c1fc]" name="checkBookFlightPageTitle" duration-ms="567" started-at="2017-04-18T19:49:18Z" finished-at="2017-04-18T19:49:19Z">
+        <test-method status="PASS" signature="checkBookFlightPageTitle()[pri:0, instance:com.bitm.newtours.test.BookFlightTest@3532ec19]" name="checkBookFlightPageTitle" duration-ms="2333" started-at="2017-05-10T17:42:32Z" finished-at="2017-05-10T17:42:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBookFlightPageTitle -->
-        <test-method status="PASS" signature="checkBookFlight(java.util.List)[pri:0, instance:com.bitm.newtours.test.BookFlightTest@6767c1fc]" name="checkBookFlight" duration-ms="1054" started-at="2017-04-18T19:49:19Z" data-provider="BookFlightData" finished-at="2017-04-18T19:49:20Z">
+        <test-method status="PASS" signature="checkBookFlight(java.util.List)[pri:0, instance:com.bitm.newtours.test.BookFlightTest@3532ec19]" name="checkBookFlight" duration-ms="1726" started-at="2017-05-10T17:42:34Z" data-provider="BookFlightData" finished-at="2017-05-10T17:42:36Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
         </test-method> <!-- checkBookFlight -->
       </class> <!-- com.bitm.newtours.test.BookFlightTest -->
       <class name="com.bitm.newtours.test.FindFlightTest">
-        <test-method status="PASS" signature="checkFlightFindPageTitle()[pri:0, instance:com.bitm.newtours.test.FindFlightTest@29774679]" name="checkFlightFindPageTitle" duration-ms="3204" started-at="2017-04-18T19:49:12Z" finished-at="2017-04-18T19:49:15Z">
+        <test-method status="PASS" signature="checkFlightFindPageTitle()[pri:0, instance:com.bitm.newtours.test.FindFlightTest@3ffc5af1]" name="checkFlightFindPageTitle" duration-ms="5510" started-at="2017-05-10T17:42:19Z" finished-at="2017-05-10T17:42:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFlightFindPageTitle -->
-        <test-method status="PASS" signature="checkFlightDetails(java.util.List)[pri:0, instance:com.bitm.newtours.test.FindFlightTest@29774679]" name="checkFlightDetails" duration-ms="2755" started-at="2017-04-18T19:49:15Z" data-provider="FlightFindData" finished-at="2017-04-18T19:49:18Z">
+        <test-method status="PASS" signature="checkFlightDetails(java.util.List)[pri:0, instance:com.bitm.newtours.test.FindFlightTest@3ffc5af1]" name="checkFlightDetails" duration-ms="5100" started-at="2017-05-10T17:42:24Z" data-provider="FlightFindData" finished-at="2017-05-10T17:42:29Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,11 @@
         </test-method> <!-- checkFlightDetails -->
       </class> <!-- com.bitm.newtours.test.FindFlightTest -->
       <class name="com.bitm.newtours.test.HomeTest">
-        <test-method status="PASS" signature="checkHomePageTitle()[pri:0, instance:com.bitm.newtours.test.HomeTest@523884b2]" name="checkHomePageTitle" duration-ms="7800" started-at="2017-04-18T19:49:00Z" finished-at="2017-04-18T19:49:07Z">
+        <test-method status="PASS" signature="checkHomePageTitle()[pri:0, instance:com.bitm.newtours.test.HomeTest@55f3ddb1]" name="checkHomePageTitle" duration-ms="44202" started-at="2017-05-10T17:41:21Z" finished-at="2017-05-10T17:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHomePageTitle -->
-        <test-method status="PASS" signature="checkLogin(java.util.List)[pri:0, instance:com.bitm.newtours.test.HomeTest@523884b2]" name="checkLogin" duration-ms="3507" started-at="2017-04-18T19:49:08Z" data-provider="loginData" finished-at="2017-04-18T19:49:12Z">
+        <test-method status="PASS" signature="checkLogin(java.util.List)[pri:0, instance:com.bitm.newtours.test.HomeTest@55f3ddb1]" name="checkLogin" duration-ms="10225" started-at="2017-05-10T17:42:08Z" data-provider="loginData" finished-at="2017-05-10T17:42:19Z">
           <params>
             <param index="0">
               <value>

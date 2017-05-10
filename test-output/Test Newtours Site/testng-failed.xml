@@ -3,11 +3,29 @@
 <suite name="Failed suite [Test Newtours Site]">
   <test name="Complete NewTours Site Test(failed)">
     <classes>
+      <class name="com.bitm.newtours.test.HomeTest">
+        <methods>
+          <include name="checkLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitm.newtours.test.HomeTest -->
+      <class name="com.bitm.newtours.test.SelectFlightTest">
+        <methods>
+          <include name="checkSelectFlightPageTitle"/>
+          <include name="checkSelectFlight"/>
+        </methods>
+      </class> <!-- com.bitm.newtours.test.SelectFlightTest -->
       <class name="com.bitm.newtours.test.BookFlightTest">
         <methods>
+          <include name="checkBookFlightPageTitle"/>
           <include name="checkBookFlight" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.bitm.newtours.test.BookFlightTest -->
+      <class name="com.bitm.newtours.test.FindFlightTest">
+        <methods>
+          <include name="checkFlightDetails" invocation-numbers="0"/>
+          <include name="checkFlightFindPageTitle"/>
+        </methods>
+      </class> <!-- com.bitm.newtours.test.FindFlightTest -->
     </classes>
   </test> <!-- Complete NewTours Site Test(failed) -->
 </suite> <!-- Failed suite [Test Newtours Site] -->

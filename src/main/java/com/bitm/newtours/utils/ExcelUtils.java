@@ -61,7 +61,9 @@ public class ExcelUtils {
 	}
 	private  static Sheet getSheet(int sheetNo) throws IOException{
 		// change the file location as per your computer
-		inputStream = new FileInputStream(new File("E:\\data.xlsx"));
+		File f = new File("src/main/java");
+		File fs = new File(f,"data.xlsx");
+		inputStream = new FileInputStream(new File(fs.getAbsolutePath()));
 		workbook = new XSSFWorkbook(inputStream);
         Sheet sheet = workbook.getSheetAt(sheetNo);
         return sheet;
